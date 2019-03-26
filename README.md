@@ -3,7 +3,7 @@ Dubbi frequenti presentati durante le esercitazioni
 
 Questa guida verrà aggiornata dopo ogni esercitazione e fungerà come punto di raccolta dei dubbi più frequenti.
 
-Sito del corso disponibile [qui](http://www-db.deis.unibo.it/courses/FITA-LZ/).
+Sito del corso disponibile [qui](http://www-db.deis.unibo.it/courses/FIT1-LZ/).
 
 **N.B.** Eventuali dubbi potranno essere segnalati anche via e-mail.
 
@@ -87,7 +87,7 @@ else
     //una sola istruzione
 ```
 In questo caso non ho specificato le parentesi graffe, quindi posso inserire una sola istruzione all'interno dell'istruzione **if/else**, tutte le altre istruzioni saranno considerate esterne all'istruzione di selezione.
-Quindi nel caso in cui vogliamo eseguire più di una singola istruazione bisognerà **obbligatoriamente** usare le parentesi graffe.
+Quindi nel caso in cui vogliamo eseguire più di una singola istruzione bisognerà **obbligatoriamente** usare le parentesi graffe.
 
 ```java
 if(condizione){
@@ -96,10 +96,10 @@ if(condizione){
 }
 else if(condizione2){
     /*Tutte le istruzioni inserite in questo blocco verranno 
-    eseguite solo se la condizione è soddisfatta*/
+    eseguite solo se la condizione2 è soddisfatta*/
 }else{
     /*Tutte le istruzioni inserite in questo blocco verranno 
-    eseguite se le precendeti istruzioni non sono soddisfatte*/
+    eseguite se le precendenti condizioni non sono soddisfatte*/
 }
 
 ```

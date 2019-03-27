@@ -103,3 +103,35 @@ else if(condizione2){
 }
 
 ```
+
+### Assegnamento VS Uguaglianza
+Uno degli errori più comuni riguarda la distinzione tra questi due operatori '**=**' e '**==**'.
+L'operatore '**=**' è usato per assegnare un valore ad una variabile. Quindi ricordando la struttura di una variabile
+```java
+    tipo nome = valore
+```
+Questo permetterà di inserire il valore dentro la **cella di memoria** alla quale è stato assegnato il nome *nome*.
+
+Diverso è il caso di'**==**'. È un operatore di comparazione. Questo significa che potrà essere usato per verificare l'ugualianza di due valori (come illustrato di seguito).
+
+```java
+int n1 = 10;
+int n2 = 11;
+
+if(n1 == n2){
+    //esegui queste istruzioni
+}else
+    //esegui questa istruzione
+```
+
+In conclusione, non bisogna **MAI** scrivere una cosa del genere
+```java
+int n1 = 10;
+int n2 = 11;
+
+if(n1 = n2){ //SBAGLIATO
+    //esegui queste istruzioni
+}else
+    //esegui questa istruzione
+```
+Il compilatore comunque segnalerà questa tipologia di errore, in quanto riconoscerà l'errore nella sintassi.

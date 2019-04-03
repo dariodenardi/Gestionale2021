@@ -16,6 +16,36 @@ Facendo riferimento alle slide presenti sul **sito del corso** i passi da seguir
 
 **Importante Mac**: le ultime versioni di MacOs non prevedono l'istallazione by default del jdk, quindi bisognerà installare il tutto a mano prima di eclipse. Le slide sono state aggiornate con la guida relativa.
 
+## Risoluzione problemi Eclipse
+### Mancanza librerie
+È possibile che la versione usata del JDK a casa sia diversa da quella del laboratorio. Questo potrebbe provocare (se la versione del JDK di casa è più recente rispetto a quella del laboratorio) un'incongruenza di librerie nel progetto e una conseguente eliminazione delle librerie dal progetto. Quindi il risultato sarà un progetto pieno di errori.
+
+<img src="img/img1.png" width="" height="60">
+
+Ci toccherà aggiungere nuovamente la libreria.
+
+Per fare ciò occorre configurare il **build Path** (tasto destro sul progett --> Build Path --> Configure Build Path).
+
+<img src="img/img2.png" width="400" height="">
+
+Selezionando la sezione **libraries**, potremo aggiungere la nostra libreria.
+
+<img src="img/img3.png" width="" height="">
+
+Selezioniamo **Modulepath** e successivamente **Add Library**
+
+La scheramata successiva sarà la seguente.
+
+<img src="img/img4.png" width="500" height="">
+
+Selezioniamo **JRE System Library** clicchiamo su **Next**.
+
+<img src="img/img5.png" width="500" height="">
+
+Lasciamo tutto così com'è e clicchiamo su **Finish**
+
+Al termine di questa operazione clicchiamo su **Apply** e la libreria sarà nuovamente presente.
+
 ## Input Stringhe
 Errore comune quando si vuole leggere una stringa da input risiede nella *nextLine()* della scanner.
 Questo è dovuto al comportamento anomalo della *nextLine()* che va a consumare l'invio della lettura precedente.

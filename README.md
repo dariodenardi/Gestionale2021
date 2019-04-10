@@ -30,7 +30,7 @@ Per fare ciò occorre configurare il **build Path** (tasto destro sul progett --
 
 Selezionando la sezione **libraries**, potremo aggiungere la nostra libreria.
 
-<img src="img/img3.png" width="" height="">
+<img src="img/img3.png" width="500" height="">
 
 Selezioniamo **Modulepath** e successivamente **Add Library**
 
@@ -165,3 +165,53 @@ if(n1 = n2){ //SBAGLIATO
     //esegui questa istruzione
 ```
 Il compilatore comunque segnalerà questa tipologia di errore, in quanto riconoscerà l'errore nella sintassi.
+
+# Iterazione
+Bisogna fare attenzione ai cicli "*fantasma*". Se scriviamo
+```java
+for(int i = 0; i < 10; i ++); {
+    System.out.println(i);
+}
+```
+Il valore di **i** non verrà mai stampato! Perchè è presente un '**;**' prima della parentesi graffa. 
+
+Questo errore è molto simile a quello presentato nella prima parte delle istruzioni di selezione.
+
+# Classi
+## Come si crea un'istanza di una classe?
+Uno dei dubbi più presenti durante questa esercitazionw riguarda principalmente la creazione dell'istanza.
+
+Basta pensare semplicemente alla famosissima e usatissima classe **Scanner**, che usiamo tutte le volte che vogliamo prendere un input
+```java
+    Scanner s = null; // in questo momento esiste una varibile di nome 's' inizializzata a null, ma ancora non esiste un'istanza di Scanner
+
+    s = new Scanner(System.in); // ora 's' è diventata un'istanza della classe Scanner
+```
+
+Per poter accedere poi ai metodi della classe Scanner basta usare la **notazione puntata**.
+
+Questo significa che tutti i metodi **pubblici** (preceduti dalla keyword **public**) definiti all'interno della classe Scanner potranno essere usati.
+
+La stessa cosa vale per una classe creata da noi. Supponendo di aver creato una classe **Persona** contenente un metodo **getNome()**, per accedere a tale metodo la sintassi è la seguente
+```java
+    /*Per prima cosa creo un'istanza della classe persona!*/
+    Persona pers = new Persona();
+
+    /*Ora posso accedere a tutti i metodi definiti all'interno della classe persona*/
+    String nome = pers.getNome(); //in questo caso il metodo restituirà una stringa
+```
+
+## È possibile che un metodo restituisca un'istanza di una classe?
+**CERTO** ed è fondamentale!
+
+Questo permette di crearci un tipo di ritorno personalizzato, in quanto la classe è un "tipo" (riferimento) creato da noi.
+
+```java
+public Persona getAngelo(){
+    Persona p = new Persona();
+    p.setNome("Angelo"); //metodo set (di inizializzazione)
+
+    return p;
+}
+```
+

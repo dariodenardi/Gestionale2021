@@ -1,9 +1,9 @@
-# Gestionale1819
+# Gestionale1920
 Dubbi frequenti presentati durante le esercitazioni
 
 Questa guida verrà aggiornata dopo ogni esercitazione e fungerà come punto di raccolta dei dubbi più frequenti.
 
-Sito del corso disponibile [qui](http://www-db.deis.unibo.it/courses/FIT1-LZ/).
+Sito del corso disponibile su IOL [qui](https://iol.unibo.it/course/view.php?id=43453).
 
 **N.B.** Eventuali dubbi potranno essere segnalati anche via e-mail.
 
@@ -12,7 +12,7 @@ Facendo riferimento alle slide presenti sul **sito del corso** i passi da seguir
 1. Installare il JDK
 2. Installare Eclipse
 
-**Importante Windows**: la versione da scaricare è stata aggiornata (**controllare [slide](http://www-db.deis.unibo.it/courses/FITA-LZ/LABORATORIO/slide/2018-19/01_esercitazione_2019_02_27.pdf)**), in quanto la versione indicata precedentemente presentava delle incompatibilità con eclipse dando il seguente errore: **exit code = 13**
+**Importante Windows**: la versione da scaricare è stata aggiornata (**controllare slide sul sito del corso), in quanto la versione indicata precedentemente presentava delle incompatibilità con eclipse dando il seguente errore: **exit code = 13**
 
 **Importante Mac**: le ultime versioni di MacOs non prevedono l'istallazione by default del jdk, quindi bisognerà installare il tutto a mano prima di eclipse. Le slide sono state aggiornate con la guida relativa.
 

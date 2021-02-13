@@ -46,17 +46,17 @@ Lasciamo tutto così com'è e clicchiamo su **Finish**
 
 Al termine di questa operazione clicchiamo su **Apply** e la libreria sarà nuovamente presente.
 
-## Input Stringhe
+<!-- ## Input Stringhe
 Errore comune quando si vuole leggere una stringa da input risiede nella *nextLine()* della scanner.
 Questo è dovuto al comportamento anomalo della *nextLine()* che va a consumare l'invio della lettura precedente.
 ```java
 Scanner tastiera = new Scanner(System.in);
 
-// NextLine senza alcun comprtamento anomalo
+<!-- // NextLine senza alcun comprtamento anomalo
 System.out.println("Inserisci una stringa: ");
 String s1 = tastiera.nextLine();
 
-tastiera.close();
+<!-- tastiera.close();
 ```
 In questo caso non avremo nessuno comportamento anomalo, in quanto non viene effettuata alcuna lettura prima della nextLine().
 
@@ -73,9 +73,9 @@ String s1 = tastiera.nextLine();
 tastiera.close();
 ```
 
-In questo caso, la *nextLine()* andrà a consumare l'**enter** inserito al termine dell'input *tastiera.nextInt()*. Questo significa che dentro s1 ci sarà una stringa vuota.
+<!-- In questo caso, la *nextLine()* andrà a consumare l'**enter** inserito al termine dell'input *tastiera.nextInt()*. Questo significa che dentro s1 ci sarà una stringa vuota.
 
-Quindi la sequenza di istruzioni **corretta** diventa la seguente
+<!-- Quindi la sequenza di istruzioni **corretta** diventa la seguente
 
 ```java
 Scanner tastiera = new Scanner(System.in);
@@ -92,7 +92,7 @@ String s1 = tastiera.nextLine();
 tastiera.close();
 ```
 
-## Istruzioni di selezione
+<!-- ## Istruzioni di selezione
 Uno dei problemi più frequenti sull'istruzione di selezione **if/else** riguarda la struttura. In particolare
 
 ```java
@@ -104,9 +104,9 @@ if(condizione);{
     //altre istruzioni
 }
 ```
-L'errore in questo caso risiede nell'inserimento del terminatore '**;**' presente al termine della condizione. Questo terminatore infatti impedirà, nel caso in cui siano soddisfatte le condizioni, l'esecuzione delle istruzioni presenti dentro il blocco dell'if.
+<!-- L'errore in questo caso risiede nell'inserimento del terminatore '**;**' presente al termine della condizione. Questo terminatore infatti impedirà, nel caso in cui siano soddisfatte le condizioni, l'esecuzione delle istruzioni presenti dentro il blocco dell'if.
 
-Un altro dubbio riguardante la struttura riguarda il numero di istruzioni inseribili all'interno del blocco.
+<!-- Un altro dubbio riguardante la struttura riguarda il numero di istruzioni inseribili all'interno del blocco.
 
 ```java
 if (condizione)
@@ -116,7 +116,7 @@ else if(condizione2)
 else
     //una sola istruzione
 ```
-In questo caso non ho specificato le parentesi graffe, quindi posso inserire una sola istruzione all'interno dell'istruzione **if/else**, tutte le altre istruzioni saranno considerate esterne all'istruzione di selezione.
+<!-- In questo caso non ho specificato le parentesi graffe, quindi posso inserire una sola istruzione all'interno dell'istruzione **if/else**, tutte le altre istruzioni saranno considerate esterne all'istruzione di selezione.
 Quindi nel caso in cui vogliamo eseguire più di una singola istruzione bisognerà **obbligatoriamente** usare le parentesi graffe.
 
 ```java
@@ -134,7 +134,7 @@ else if(condizione2){
 
 ```
 
-### Assegnamento VS Uguaglianza
+<!-- ### Assegnamento VS Uguaglianza
 Uno degli errori più comuni riguarda la distinzione tra questi due operatori '**=**' e '**==**'.
 L'operatore '**=**' è usato per assegnare un valore ad una variabile. Quindi ricordando la struttura di una variabile
 ```java
@@ -142,7 +142,7 @@ L'operatore '**=**' è usato per assegnare un valore ad una variabile. Quindi ri
 ```
 Questo permetterà di inserire il valore dentro la **cella di memoria** alla quale è stato assegnato il nome *nome*.
 
-Diverso è il caso di'**==**'. È un operatore di comparazione. Questo significa che potrà essere usato per verificare l'ugualianza di due valori (come illustrato di seguito).
+<!-- Diverso è il caso di'**==**'. È un operatore di comparazione. Questo significa che potrà essere usato per verificare l'ugualianza di due valori (come illustrato di seguito).
 
 ```java
 int n1 = 10;
@@ -154,19 +154,19 @@ if(n1 == n2){
     //esegui questa istruzione
 ```
 
-In conclusione, non bisogna **MAI** scrivere una cosa del genere
+<!-- In conclusione, non bisogna **MAI** scrivere una cosa del genere
 ```java
 int n1 = 10;
 int n2 = 11;
 
-if(n1 = n2){ //SBAGLIATO
+<!-- if(n1 = n2){ //SBAGLIATO
     //esegui queste istruzioni
 }else
     //esegui questa istruzione
 ```
 Il compilatore comunque segnalerà questa tipologia di errore, in quanto riconoscerà l'errore nella sintassi.
 
-# Iterazione
+<!-- # Iterazione
 Bisogna fare attenzione ai cicli "*fantasma*". Se scriviamo
 ```java
 for(int i = 0; i < 10; i ++); {
@@ -175,13 +175,13 @@ for(int i = 0; i < 10; i ++); {
 ```
 Il valore di **i** non verrà mai stampato! Perchè è presente un '**;**' prima della parentesi graffa. 
 
-Questo errore è molto simile a quello presentato nella prima parte delle istruzioni di selezione.
+<!-- Questo errore è molto simile a quello presentato nella prima parte delle istruzioni di selezione.
 
-# Classi
+<!-- # Classi
 ## Come si crea un'istanza di una classe?
 Uno dei dubbi più presenti durante questa esercitazionw riguarda principalmente la creazione dell'istanza.
 
-Basta pensare semplicemente alla famosissima e usatissima classe **Scanner**, che usiamo tutte le volte che vogliamo prendere un input
+<!-- Basta pensare semplicemente alla famosissima e usatissima classe **Scanner**, che usiamo tutte le volte che vogliamo prendere un input
 ```java
     Scanner s = null; // in questo momento esiste una varibile di nome 's' inizializzata a null, ma ancora non esiste un'istanza di Scanner
 
@@ -201,10 +201,10 @@ La stessa cosa vale per una classe creata da noi. Supponendo di aver creato una 
     String nome = pers.getNome(); //in questo caso il metodo restituirà una stringa
 ```
 
-## È possibile che un metodo restituisca un'istanza di una classe?
+<!-- ## È possibile che un metodo restituisca un'istanza di una classe?
 **CERTO** ed è fondamentale!
 
-Questo permette di crearci un tipo di ritorno personalizzato, in quanto la classe è un "tipo" (riferimento) creato da noi.
+<!-- Questo permette di crearci un tipo di ritorno personalizzato, in quanto la classe è un "tipo" (riferimento) creato da noi.
 
 ```java
 public Persona getAngelo(){

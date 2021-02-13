@@ -1,9 +1,9 @@
-# Gestionale1920
+# Gestionale2021
 Dubbi frequenti presentati durante le esercitazioni
 
 Questa guida verrà aggiornata dopo ogni esercitazione e fungerà come punto di raccolta dei dubbi più frequenti.
 
-Sito del corso disponibile su IOL [qui](https://iol.unibo.it/course/view.php?id=43453).
+Sito del corso disponibile su IOL [qui](https://virtuale.unibo.it/course/view.php?id=20726).
 
 **N.B.** Eventuali dubbi potranno essere segnalati anche via e-mail.
 

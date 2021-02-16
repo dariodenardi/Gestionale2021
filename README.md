@@ -12,9 +12,7 @@ Facendo riferimento alle slide presenti sul **sito del corso** i passi da seguir
 1. Installare il JDK
 2. Installare Eclipse
 
-**Importante Windows**: la versione da scaricare è stata aggiornata (**controllare slide sul sito del corso), in quanto la versione indicata precedentemente presentava delle incompatibilità con eclipse dando il seguente errore: **exit code = 13**
-
-**Importante Mac**: le ultime versioni di MacOs non prevedono l'istallazione by default del jdk, quindi bisognerà installare il tutto a mano prima di eclipse. Le slide sono state aggiornate con la guida relativa.
+**Importante Mac**: le ultime versioni di MacOs prevedono l'istallazione by default del jdk, quindi bisognerà installare il tutto. Le slide sono state aggiornate con la guida relativa.
 
 ## Risoluzione problemi Eclipse
 ### Mancanza librerie

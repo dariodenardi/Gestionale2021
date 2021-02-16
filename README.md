@@ -12,7 +12,7 @@ Facendo riferimento alle slide presenti sul **sito del corso** i passi da seguir
 1. Installare il JDK
 2. Installare Eclipse
 
-**Importante Mac**: le ultime versioni di MacOs prevedono l'istallazione by default del jdk, quindi bisognerà installare il tutto. Le slide sono state aggiornate con la guida relativa.
+**Importante Mac**: le ultime versioni di MacOs prevedono l'istallazione by default del jdk, quindi bisognerà installare anche il jdk. Per vedere se il jdk è installato consultare le slide di laboratorio
 
 ## Risoluzione problemi Eclipse
 ### Mancanza librerie

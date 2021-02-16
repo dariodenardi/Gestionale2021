@@ -8,11 +8,11 @@ Sito del corso disponibile su Virtuale [qui](https://virtuale.unibo.it/course/vi
 **N.B.** Eventuali dubbi potranno essere segnalati anche via e-mail.
 
 ## Installazione del JDK e di Eclipse
-Facendo riferimento alle slide presenti sul **sito del corso** i passi da seguire in sequenza sono i seguenti:
+Facendo riferimento alle slide presenti sul **Virtuale** i passi da seguire in sequenza sono i seguenti:
 1. Installare il JDK
 2. Installare Eclipse
 
-**Importante Mac**: le ultime versioni di MacOs prevedono l'istallazione by default del jdk, quindi bisognerà installare anche il jdk. Per vedere se il jdk è installato consultare le slide di laboratorio
+**Importante Mac**: le ultime versioni di MacOs prevedono anche l'istallazione jdk. Per vedere se il jdk è installato consultare le slide di laboratorio
 
 ## Risoluzione problemi Eclipse
 ### Mancanza librerie
